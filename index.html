@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/butterfly logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'am <span>Deepti Joshi <br> A web developer passionate about creating <br> beautiful and functional websites </span> 
+        </div>
+    </div>
+
+</div>
+<!------about-------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/code 2.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-Title">About Me</h1>
+                <p>Motivated and detail-oriented , Seeking an entry-level position where I can apply my technical knowledge, collaborate with
+                    experienced professionals, and grow within a dynamic development team</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                </div>
+                
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Website / Application Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android /iOS Apps</li>
+
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Online Movie Ticket Booking System</span><br>-The System is created using HTML, CSS, JAVASCRIPT in Frontend and PHP is used in Backend and Database is MYSQL <br>-The basic Fundamentals are signup, log in for Customer and Admin <br>Admin has all the Rights reserves to make changes in System</li>
+                        <li><span>QR code Generator</span><br>-UI Design of the QR Code Generator is created by using HTML , CSS and functionality to it using JavaScript <br>
+                            -JavaScript is used to add dynamic functionality, such as generating QR codes in real-time based on user input and allowing
+                            users to customize the QR code's color, size, and format</li>
+                        <li><span>Realtime Device Tracker</span><br>-Developed real-time device tracking application using Node.js, Socket.io<br>
+                            -The frontend interface is developed using HTML, CSS, and JavaScript  <br>
+                            -It provides a map-based interface (using libraries like Leaflet or Google Maps API) to display the real-time location of
+                            devices.</li>
+
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024</span><br>MBA</li>
+                        <li><span>2022</span><br>B.SC. Bachelor of Computer Science</li>
+                        <li><span>2019</span><br>HSC</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="Sub-Title">My Services</h1>
+           <div class="services-list">
+
+             <div>
+                <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam inventore beatae deserunt assumenda nemo quibusdam vel autem dolores, dignissimos illo alias iure a ut repellat aliquid voluptates, temporibus incidunt quo.
+                </p>
+             <a href="#">learn more</a>
+                </div>
+            </div>
+
+            <div>
+                <div>
+
+                 <i class="fa-brands fa-app-store"></i>
+                <h2>UI/UX Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam inventore beatae deserunt assumenda nemo quibusdam vel autem dolores, dignissimos illo alias iure a ut repellat aliquid voluptates, temporibus incidunt quo.
+                    
+                </p>
+                <a href="#">learn more</a>
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+
+                <h2>App Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam inventore beatae deserunt assumenda nemo quibusdam vel autem dolores, dignissimos illo alias iure a ut repellat aliquid voluptates, temporibus incidunt quo.
+                    
+                </p>
+                <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+     </div>
+</div>
+
+<!---------portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="Sub-Title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Online Movie Ticket Booking System</h3>
+                    <p>The system is created by Using HTML, CSS, JavaScript in Frontend and php is used in backend and Database is MySQL. <br>
+                         Visual studio code IDE is used for Developing Environment. <br>
+                         The basic fundamentals are signup, login for Customer and Admin . <br>
+                        Admin has all the rights reserved to make changes in System.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>QR Code Generator</h3>
+                    <p>UI Design of the QR Code Generator is created by using HTML , CSS and functionality to it using JavaScript . <br>
+                        JavaScript is used to add dynamic functionality, such as generating QR codes in real-time based on user input and allowing
+                        users to customize the QR code's color, size, and format.</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Realtime Device Tracker</h3>
+                    <p>Developed real-time device tracking application using Node.js, Socket.io. <br>
+                        The frontend interface is developed using HTML, CSS, and JavaScript . <br>
+                        It provides a map-based interface (using libraries like Leaflet or Google Maps API) to display the real-time location of
+                        devices.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--------CONTACT--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Sub-Title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>deeptiajoshi01@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+
+            <div class="social-icons">
+                <a href="https://in.linkedin.com/ "><i class="fa-brands fa-linkedin"></i></a>
+                 <a href=" "><i class="fa-brands fa-instagram"></i></a>
+                 <a href=""> <i class="fa-brands fa-facebook-messenger"></i></a>
+                 <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <a href="images/My-cv.pdf" download class="btn btn2">Download Cv</a>
+        </div>
+         <!--------<a href="" class="btn btn2">Download Cv</a>----------->
+          <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="Email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @Deepti. Made with <i class="fa-solid fa-heart"></i>  by Deepti Joshi </p>
+</div>
+
+</div>
+
+<!----JavaScript---->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents)
+        {
+
+            tabcontent.classList.remove("active-tab");
+        }
+
+             event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+
+</script>
+
+<!----JAVASCRIPT FOR MENU BUTTON-->
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+<!--------GOOGLESHEET CODE-->
+
+<form name="submit-to-google-sheet">
+ <!----   <input name="email" type="email" placeholder="Email" required>--->
+    <!--<button type="submit">Send</button>-->
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpllAlch-hP_kWkPcvFAbU-bRhf6rmar1ci_Kus1epuud-uSBFspBWDNHEHlYf0d5ngA/exec'
+    const form = document.forms['submit-to-google-sheet']
+      const msg = getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHtml = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHtml = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
